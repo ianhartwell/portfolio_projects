@@ -9,4 +9,14 @@
     - Use the random number generator to generate a random index for each array to construct a random message.
     - Output the final message so that it is randomised each time */
 
-    
+// Create a list of arrays for intros, middles and outros
+const intro = ['hello', 'hey', 'hi', 'good morning', 'good afternoon'];
+const middle = ['sunny', 'cloudy', 'rainy', 'snowy', 'mixed'];
+const outro = ['goodbye', 'nice to see you', 'take care', 'good luck', 'you got this'];
+
+// Create a random number generator to select a random array index
+const randomIndex = (array) => {
+    const index = Math.floor(Math.random() * array.length);
+    return array[index];
+};
+
