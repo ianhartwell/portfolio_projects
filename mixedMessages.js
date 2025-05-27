@@ -26,12 +26,16 @@ const capitalize = word => {
     return newWord;;
 };
 
-console.log(capitalize('hello')); // test capitalize function output
+//console.log(capitalize('hello')); // test capitalize function output
 
 // Assign a random intro/middle/outro to variables
 let randomIntro = randomIndex(intro);
-console.log(randomIntro); // test output
+//console.log(randomIntro); // test output
 let randomMiddle = randomIndex(middle);
-console.log(randomMiddle); // test output
+//console.log(randomMiddle); // test output
 let randomOutro = randomIndex(outro);
-console.log(randomOutro); // test output
+//console.log(randomOutro); // test output
+
+// Combine variables to generate a mixedMessage
+let mixedMessage = `${capitalize(randomIntro)}! Today looks ${randomMiddle}. ${capitalize(randomOutro)}!`
+console.log(mixedMessage);
