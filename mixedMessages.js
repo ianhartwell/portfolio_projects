@@ -20,6 +20,14 @@ const randomIndex = (array) => {
     return array[index];
 };
 
+// Create function to capitalize the first letter of a word
+const capitalize = word => {
+    newWord = word.charAt(0).toUpperCase() + word.slice(1);
+    return newWord;;
+};
+
+console.log(capitalize('hello')); // test capitalize function output
+
 // Assign a random intro/middle/outro to variables
 let randomIntro = randomIndex(intro);
 console.log(randomIntro); // test output
