@@ -39,3 +39,8 @@ let randomOutro = randomIndex(outro);
 // Combine variables to generate a mixedMessage
 let mixedMessage = `${capitalize(randomIntro)}! Today looks ${randomMiddle}. ${capitalize(randomOutro)}!`
 console.log(mixedMessage);
+
+/* Future steps
+        - Consider utilising switch statements to tailor outro messages to middle messages
+        - Add positive and negative arrays for more varied mixedMessages
+        - Form more complex messages with more inputs and contextual awareness */
