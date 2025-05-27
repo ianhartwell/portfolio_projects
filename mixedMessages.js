@@ -20,3 +20,10 @@ const randomIndex = (array) => {
     return array[index];
 };
 
+// Assign a random intro/middle/outro to variables
+let randomIntro = randomIndex(intro);
+console.log(randomIntro); // test output
+let randomMiddle = randomIndex(middle);
+console.log(randomMiddle); // test output
+let randomOutro = randomIndex(outro);
+console.log(randomOutro); // test output
